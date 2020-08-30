@@ -1,0 +1,36 @@
+
+<h2 style="text-align: center;">Visualizza le prenotazioni dei menu </h2>
+
+
+
+<div  *ngFor='let g of giorni'  class='divGiorni'>
+
+
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th colspan="2">
+       {{g.data  | date: 'dd/MM/yyyy'}}  <button type="button" class="btn btn-danger btn-sm" style='margin-left: 25px;'  (click)='eliminaGiorno(g.tokenGiorno)' >Elimina giorno</button>
+       </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">
+          <button type="button" class="btn btn-light" (click)='goToPageMenuUtenti(g)' >Visualizza Menu</button>
+        </th>
+        <td>
+          <button type="button" class="btn btn-light" (click)='goToPage(g)' >Visualizza Utenti</button>
+
+          </td>
+
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
+
+</div>

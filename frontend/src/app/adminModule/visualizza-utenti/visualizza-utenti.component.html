@@ -1,0 +1,25 @@
+
+
+<h3 style="text-align: center;">{{getNomeGiorno(giorno.data)}}  {{giorno.data | date: 'dd/MM/yyyy'}} </h3>
+
+
+
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Cognome e nome </th>
+        <th scope="col">Menu</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let u of listaUtenti'>
+
+        <td>{{u.nomeCognome}}</td>
+        <td>{{u.menu}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

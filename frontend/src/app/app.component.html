@@ -1,0 +1,62 @@
+<!-- nav -->
+<!-- <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" routerLink="/admin" *ngIf="isAdmin">Admin</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+
+    </div>
+</nav>
+ -->
+
+
+
+
+
+ <nav class="navbar navbar-expand-md navbar-dark  bg-dark barraNavigazione" *ngIf="currentUser"  >
+  <a class="navbar-brand" [routerLink]="'.'">{{applicazione}}</a>
+
+
+  <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+    &#9776;
+  </button>
+
+
+  <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+      </li>
+<!--       <li class="nav-item">
+        <a class="nav-item nav-link" routerLink="/admin" *ngIf="isAdmin">Admin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-item nav-link" routerLink="/sessione" *ngIf="isAdmin">Sessioni</a>
+      </li> -->
+
+      <li class="nav-item">
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<!-- main app container -->
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+<!-- credits -->
+<div class="text-center mt-4">
+  <p>Applicazione sviluppata da Alessio Rossato</p>
+<!--     <p>
+        <a href="https://jasonwatmore.com/post/2019/08/06/angular-8-role-based-authorization-tutorial-with-example" target="_top">Angular 8 - Role Based Authorization Tutorial with Example</a>
+    </p>
+    <p>
+        <a href="https://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+    </p> -->
+</div>

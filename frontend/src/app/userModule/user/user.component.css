@@ -1,0 +1,14 @@
+.buttonPrenota{
+    height: 10em;
+    margin-top:30px;
+    width:100%;
+    font-size:150%;
+}
+
+.buttonVisualizza{
+  height: 10em;
+  margin-top:30px;
+  width:100%;
+  font-size:150%;
+  background-color: rgb(244, 226, 84);
+}

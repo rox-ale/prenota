@@ -1,0 +1,38 @@
+
+<h2 style="text-align: center;">Lista menu prenotati</h2>
+
+<div *ngFor="let p of listaPrenotazioni" style="margin-top: 50px;">
+
+   <h2 style="text-align: center;">{{getNomeGiorno(p.menu.giorno.data)}}     {{p.menu.giorno.data | date: 'dd/MM/yyyy'}}</h2>
+
+
+  <div class="p-2 bg-warning menuPrenotato" style="width:60%">
+    <div class="row  "   style="  justify-content:center;"  >
+
+   <b> {{p.menu.nome}}</b>
+    </div>
+    <div class="row">
+      <div class="col-4">Pasto</div>
+      <div class="col-8">{{p.menu.pasto}}</div>
+    </div>
+    <div class="row">
+      <div class="col-4">Contorno</div>
+      <div class="col-8">{{p.menu.contorno}}</div>
+    </div>
+    <div class="row">
+      <div class="col-4">Extra</div>
+      <div class="col-8">{{p.menu.extra}}</div>
+    </div>
+    <div class="row">
+      <div class="col-4">Note</div>
+      <div class="col-8">{{p.menu.note}}</div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+      <div class="col text-center">
+        <button class="btn btn-danger btn-sm btn-block"  [disabled]='btnDeleteIsDisabled(p.menu.giorno.data)'  (click)= 'deletePrenotazione(p.tokenPrenotazione)'> Elimina Prenotazione</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>

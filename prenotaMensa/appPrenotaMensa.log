@@ -1,0 +1,120 @@
+2020-08-03 20:14:51.470  INFO 14544 --- [main] i.a.p.PrenotaMensaApplicationTests       : Starting PrenotaMensaApplicationTests on alessior with PID 14544 (started by Alessio in H:\Programmazione\prenotaMensa\prenotaMensa)
+2020-08-03 20:14:51.477  INFO 14544 --- [main] i.a.p.PrenotaMensaApplicationTests       : No active profile set, falling back to default profiles: default
+2020-08-03 20:14:54.127  INFO 14544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-03 20:14:54.414  INFO 14544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 239ms. Found 1 JPA repository interfaces.
+2020-08-03 20:14:55.687  INFO 14544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3050ac2f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 20:14:55.710  INFO 14544 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 20:14:56.282  INFO 14544 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-03 20:14:56.313  INFO 14544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-03 20:14:56.623  INFO 14544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-03 20:14:56.899  INFO 14544 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-03 20:14:57.108  WARN 14544 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-03 20:14:57.220  INFO 14544 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-03 20:14:58.124  INFO 14544 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-03 20:14:58.674  INFO 14544 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/auth/**', POST], []
+2020-08-03 20:14:58.675  INFO 14544 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-08-03 20:14:58.675  INFO 14544 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/', GET], []
+2020-08-03 20:14:58.797  INFO 14544 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-03 20:15:00.093  INFO 14544 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b506ed0, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e30db85, org.springframework.security.web.header.HeaderWriterFilter@23444a36, org.springframework.web.filter.CorsFilter@282c4da0, org.springframework.security.web.authentication.logout.LogoutFilter@15214920, it.alessiorossato.prenotaMensa.security.jwt.AuthTokenFilter@67e0fd6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14b528b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d2c9361, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65f3e805, org.springframework.security.web.session.SessionManagementFilter@5b2b8d86, org.springframework.security.web.access.ExceptionTranslationFilter@57bd6a8f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25f0c5e7]
+2020-08-03 20:15:01.597  INFO 14544 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-03 20:15:01.605  INFO 14544 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-03 20:15:01.621  INFO 14544 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-03 20:15:02.613  INFO 14544 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-03 20:15:02.627  INFO 14544 --- [main] i.a.p.PrenotaMensaApplicationTests       : Started PrenotaMensaApplicationTests in 11.982 seconds (JVM running for 14.894)
+2020-08-03 20:15:03.364  INFO 14544 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-03 20:15:03.367  INFO 14544 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-03 20:15:03.367  INFO 14544 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-03 20:15:03.401  INFO 14544 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-03 20:15:06.923  INFO 12340 --- [main] i.a.p.PrenotaMensaApplication            : Starting PrenotaMensaApplication on alessior with PID 12340 (H:\Programmazione\prenotaMensa\prenotaMensa\target\classes started by Alessio in H:\Programmazione\prenotaMensa\prenotaMensa)
+2020-08-03 20:15:06.928  INFO 12340 --- [main] i.a.p.PrenotaMensaApplication            : No active profile set, falling back to default profiles: default
+2020-08-03 20:15:08.453  INFO 12340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-03 20:15:08.578  INFO 12340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115ms. Found 1 JPA repository interfaces.
+2020-08-03 20:15:09.044  INFO 12340 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@573284a5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 20:15:09.050  INFO 12340 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-03 20:15:09.390  INFO 12340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-08-03 20:15:09.400  INFO 12340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-03 20:15:09.400  INFO 12340 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-03 20:15:09.600  INFO 12340 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-03 20:15:09.600  INFO 12340 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2592 ms
+2020-08-03 20:15:09.743  WARN 12340 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-03 20:15:10.015  INFO 12340 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-03 20:15:10.030  INFO 12340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-03 20:15:10.241  INFO 12340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-03 20:15:10.332  INFO 12340 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-03 20:15:10.399  INFO 12340 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-03 20:15:10.567  INFO 12340 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-03 20:15:10.723  INFO 12340 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-03 20:15:10.840  INFO 12340 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/api/auth/**', POST], []
+2020-08-03 20:15:10.841  INFO 12340 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**', OPTIONS], []
+2020-08-03 20:15:10.841  INFO 12340 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/', GET], []
+2020-08-03 20:15:11.272  INFO 12340 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f930e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@7eeb38b2, org.springframework.security.web.header.HeaderWriterFilter@50b46e24, org.springframework.web.filter.CorsFilter@450f0235, org.springframework.security.web.authentication.logout.LogoutFilter@2eada095, it.alessiorossato.prenotaMensa.security.jwt.AuthTokenFilter@479ac2cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d6bff89, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f2d890c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78c262ba, org.springframework.security.web.session.SessionManagementFilter@5696c927, org.springframework.security.web.access.ExceptionTranslationFilter@4e80a001, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c412556]
+2020-08-03 20:15:11.753  INFO 12340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2020-08-03 20:15:11.755  INFO 12340 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositoriesâ€¦
+2020-08-03 20:15:12.026  INFO 12340 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-03 20:15:12.038  INFO 12340 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-03 20:15:12.426  INFO 12340 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-03 20:15:12.439  INFO 12340 --- [main] i.a.p.PrenotaMensaApplication            : Started PrenotaMensaApplication in 6.138 seconds (JVM running for 7.954)
+2020-08-03 20:16:01.935  INFO 12340 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-03 20:16:01.936  INFO 12340 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-03 20:16:01.945  INFO 12340 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-08-03 20:16:01.957  WARN 12340 --- [http-nio-8090-exec-1] i.a.p.security.jwt.AuthTokenFilter       : Token: null
+2020-08-03 20:16:01.957  WARN 12340 --- [http-nio-8090-exec-1] i.a.p.security.jwt.AuthTokenFilter       : TOKEN NON VALIDO
+2020-08-03 20:16:01.989  WARN 12340 --- [http-nio-8090-exec-2] i.a.p.security.jwt.AuthTokenFilter       : Token: null
+2020-08-03 20:16:01.989  WARN 12340 --- [http-nio-8090-exec-2] i.a.p.security.jwt.AuthTokenFilter       : TOKEN NON VALIDO
+2020-08-03 20:16:02.069  INFO 12340 --- [http-nio-8090-exec-2] i.a.p.controller.AuthController          :  ******  Autenticazione e Generazione Token   ******admin
+2020-08-03 20:16:02.072  INFO 12340 --- [http-nio-8090-exec-2] i.a.p.controller.AuthController          :  request.getRemoteAddr() 127.0.0.1
+2020-08-03 20:16:02.073  INFO 12340 --- [http-nio-8090-exec-2] i.a.p.controller.AuthController          :  request.getServerName() 127.0.0.1
+2020-08-03 20:16:02.073  INFO 12340 --- [http-nio-8090-exec-2] i.a.p.controller.AuthController          :  InetAddress.getLocalHost().getHostAddress() 192.168.56.1
+2020-08-03 20:16:02.073  INFO 12340 --- [http-nio-8090-exec-2] i.a.p.controller.AuthController          :  InetAddress.getLocalHost().getHostName() alessior
+2020-08-03 20:16:02.328 DEBUG 12340 --- [http-nio-8090-exec-2] org.hibernate.SQL                        : 
+    select
+        utente0_.token_utente as token_ut1_4_,
+        utente0_.cognome as cognome2_4_,
+        utente0_.enable as enable3_4_,
+        utente0_.nome as nome4_4_,
+        utente0_.password as password5_4_,
+        utente0_.token_ruolo as token_ru7_4_,
+        utente0_.username as username6_4_ 
+    from
+        utente utente0_ 
+    where
+        utente0_.username=?
+2020-08-03 20:16:02.334 TRACE 12340 --- [http-nio-8090-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [admin]
+2020-08-03 20:16:02.355 DEBUG 12340 --- [http-nio-8090-exec-2] org.hibernate.SQL                        : 
+    select
+        ruolo0_.token_ruolo as token_ru1_3_0_,
+        ruolo0_.nome as nome2_3_0_ 
+    from
+        ruolo ruolo0_ 
+    where
+        ruolo0_.token_ruolo=?
+2020-08-03 20:16:02.356 TRACE 12340 --- [http-nio-8090-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [1]
+2020-08-03 20:16:02.497 DEBUG 12340 --- [http-nio-8090-exec-2] org.hibernate.SQL                        : 
+    select
+        utente0_.token_utente as token_ut1_4_,
+        utente0_.cognome as cognome2_4_,
+        utente0_.enable as enable3_4_,
+        utente0_.nome as nome4_4_,
+        utente0_.password as password5_4_,
+        utente0_.token_ruolo as token_ru7_4_,
+        utente0_.username as username6_4_ 
+    from
+        utente utente0_ 
+    where
+        utente0_.username=?
+2020-08-03 20:16:02.498 TRACE 12340 --- [http-nio-8090-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [admin]
+2020-08-03 20:16:02.598  WARN 12340 --- [http-nio-8090-exec-2] i.a.p.controller.AuthController          :  Token eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU5NjU2NDk2MiwiaWF0IjoxNTk2NDc4NTYyLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIl19.GRO4lBAXIUtVXEbWLLKtQhoFtT7JS2KfQD7nOoFshCx3PoeYBkVkdXIeuHGz7AAiUDWbPgA4DXGAA2SG_jUT8w
+2020-08-03 20:16:02.605 DEBUG 12340 --- [http-nio-8090-exec-2] org.hibernate.SQL                        : 
+    select
+        utente0_.token_utente as token_ut1_4_,
+        utente0_.cognome as cognome2_4_,
+        utente0_.enable as enable3_4_,
+        utente0_.nome as nome4_4_,
+        utente0_.password as password5_4_,
+        utente0_.token_ruolo as token_ru7_4_,
+        utente0_.username as username6_4_ 
+    from
+        utente utente0_ 
+    where
+        utente0_.username=?
+2020-08-03 20:16:02.605 TRACE 12340 --- [http-nio-8090-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [admin]

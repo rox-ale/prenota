@@ -1,0 +1,64 @@
+<h2 style="text-align: center;">Ciao, da qui puoi prentare i tuoi menu</h2>
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+
+
+    <ngb-panel *ngFor='let g of giorni; index as i'>
+        <ng-template ngbPanelTitle>
+            {{g.data  | date: 'dd/MM/yyyy'}}
+          </ng-template>
+      <ng-template ngbPanelContent>
+
+       <div *ngFor='let m of g.listaMenu; indem as j' class='menu'>
+
+            <div class="d-flex justify-content-around bg-secondary mb-3" style="background-color: greenyellow !important;">
+              <div class="p-2 bg-info  btnLeft" style="width:5%;">
+
+
+
+            </div>
+              <div class="p-2 bg-warning" style="width:60%">
+                <div class="row  "   style="  justify-content:center;"  >
+
+               <b> {{m.nome}}</b>
+                </div>
+                <div class="row">
+                  <div class="col-4">Pasto</div>
+                  <div class="col-8">{{m.pasto}}</div>
+                </div>
+                <div class="row">
+                  <div class="col-4">Contorno</div>
+                  <div class="col-8">{{m.contorno}}</div>
+                </div>
+                <div class="row">
+                  <div class="col-4">Extra</div>
+                  <div class="col-8">{{m.extra}}</div>
+                </div>
+                <div class="row">
+                  <div class="col-4">Note</div>
+                  <div class="col-8">{{m.note}}</div>
+                </div>
+                <div class="row">
+                  <div class="col text-center">
+                    <button class="btn btn-primary btn-sm btn-block" (click)="prenotaMenu(m,i)" [disabled]='g.prenotato'>Prenota</button>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+              <div class="p-2 bg-primary btnRight" style="width:5%;">
+
+              </div>
+            </div>
+
+</div>
+      </ng-template>
+    </ngb-panel>
+
+
+
+
+
+  </ngb-accordion>

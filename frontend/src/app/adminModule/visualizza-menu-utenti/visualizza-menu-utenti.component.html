@@ -1,0 +1,58 @@
+<h2 style="text-align: center;">Visualizza i menu con le prenotazioni </h2>
+
+
+
+<h3 style="text-align: center;">{{getNomeGiorno(giorno.data)}}  {{giorno.data | date: 'dd/MM/yyyy'}} </h3>
+
+
+
+
+<div *ngFor="let p of giorno.listaMenu" style="margin-top: 50px;">
+
+
+
+ <div class="p-2 bg-warning menu" style="width:60%">
+
+
+   <div class="">
+    <div class="col h-100 "  style="  justify-content:center !important; text-align: center !important;">
+      <h1 style="font-size:2vw;" ><b>{{p.nome}}</b></h1>
+      <h1 style="font-size:20px;" class="display-3">Prenotati n° pasti {{p.prenota?.length ||'0'}}</h1>
+
+    </div>
+  </div>
+
+
+
+   <div class="row">
+     <div class="col-4">Pasto</div>
+     <div class="col-8">{{p.pasto}}</div>
+   </div>
+   <div class="row">
+     <div class="col-4">Contorno</div>
+     <div class="col-8">{{p.contorno}}</div>
+   </div>
+   <div class="row">
+     <div class="col-4">Extra</div>
+     <div class="col-8">{{p.extra}}</div>
+   </div>
+   <div class="row">
+     <div class="col-4">Note</div>
+     <div class="col-8">{{p.note}}</div>
+   </div>
+
+<div class='divUtenti'>
+  <div *ngIf="(p.prenota?.length ||0)!=0; else noUtenti">
+    <b>Utenti</b>
+    <p *ngFor ='let u of p.prenota'>
+      {{u.utente.cognome}} {{u.utente.nome}}
+    </p>
+  </div>
+
+  <ng-template #noUtenti>
+    Nessun utente ha scelto questo menu
+  </ng-template>
+</div>
+ </div>
+
+</div>

@@ -1,0 +1,95 @@
+<br />
+<h2 style="text-align: center;">Aggiungi giorno</h2>
+<br />
+
+<div class="container" style='background-color: greenyellow; border-radius: 5px;'>
+
+    <form (ngSubmit)='aggiungiGiornoForm.valid && salva()' #aggiungiGiornoForm='ngForm'>
+
+
+
+        <div class="alert alert-danger" role="alert" *ngIf='errore'>
+            {{errore}}
+        </div>
+        <div class="container">
+            <div class="row" style="margin-bottom: 20px;">
+                <div class=".col-md-2">
+                    <b> Data:</b>
+                </div>
+                <div class=".col-md-10">
+                    <input  [ngModel]="giorno.data | date:'yyyy-MM-dd'" class="form-control"  (ngModelChange)="giorno.data = $event" name='date' type='date'
+                        style="margin-left: 20px;" required />
+
+                </div>
+            </div>
+
+
+            <div *ngFor="let g of giorno.listaMenu; index as i" class="menuDiv">
+
+                <div class="form-group row">
+                    <label for="nome" class="col-sm-2 col-form-label"><b>Nome menu:</b></label>
+                    <div class="col-sm-10">
+                        <input [(ngModel)]='g.nome' class="form-control input-sm" name='nome-{{i}}' type='text'
+                        placeholder="Inserire il nome del menu"                        required />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="pasto" class="col-sm-2 col-form-label"><b>Pasto:</b></label>
+                    <div class="col-sm-10">
+                        <input [(ngModel)]='g.pasto' class="form-control input-sm" name='pasto-{{i}}' type='text'
+                        placeholder="Inserire il nome del piatto"                         />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="contorno" class="col-sm-2 col-form-label"><b>Contorno:</b></label>
+                    <div class="col-sm-10">
+                        <input [(ngModel)]='g.contorno' class="form-control input-sm" name='contorno-{{i}}' type='text'
+                        placeholder="Inserire il nome del contorno"                         />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="extra" class="col-sm-2 col-form-label"><b>Extra:</b></label>
+                    <div class="col-sm-10">
+                        <input [(ngModel)]='g.extra' class="form-control input-sm" name='extra-{{i}}' type='text'
+                        placeholder="Inserire l'extra (dessert, frutta ecc)"                         />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="note" class="col-sm-2 col-form-label"><b>Note:</b></label>
+                    <div class="col-sm-10">
+                        <input [(ngModel)]='g.note' class="form-control input-sm" name='note-{{i}}' type='text'
+                        placeholder="Inserire evventuali altri prodotti "                         />
+
+                        <!-- <textarea [(ngModel)]='g.note' name="nn-{{i}}"></textarea> -->
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger" (click)='rimuoviMenu(i)'>Rimuovi menu</button>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row">
+                <button type="button" class="btn btn-primary btn-lg btn-block" (click)="aggiungiMenu()">Aggiungi
+                    menu</button>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-warning" [disabled]='aggiungiGiornoForm.invalid'>Salva giorno</button>
+        </div>
+    </form>
+
+</div>
