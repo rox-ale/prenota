@@ -22,7 +22,7 @@ public class Menu {
     @Column(name = "note")
     private String note;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
 
     private Giorno giorno;
 
@@ -36,7 +36,7 @@ public class Menu {
 
     private Set<Utente> listaUtenti = new HashSet<>();*/
 
-    @OneToMany(mappedBy = "menu")
+    @OneToMany(mappedBy = "menu",fetch = FetchType.LAZY)
     private Set<Prenotazione> prenota = new HashSet<>();
 
     public Menu() {

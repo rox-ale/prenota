@@ -14,7 +14,7 @@ public class Giorno {
     @Column(name = "data")
     private LocalDate data;
 
-    @OneToMany(mappedBy = "giorno")
+    @OneToMany(mappedBy = "giorno",fetch = FetchType.LAZY)
 
     private Set<Menu> listaMenu = new HashSet<>();
 

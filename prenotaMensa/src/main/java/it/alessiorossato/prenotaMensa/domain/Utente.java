@@ -34,14 +34,14 @@ public class Utente {
     @NotNull
     private String cognome;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     @JoinColumn(name = "token_ruolo")
     private Ruolo ruolo;
 /*
     @ManyToMany(mappedBy = "listaUtenti")
     private Set<Menu> listaMenu = new HashSet<>();*/
 
-    @OneToMany(mappedBy = "utente")
+    @OneToMany(mappedBy = "utente",fetch = FetchType.LAZY)
     private Set<Prenotazione> prenota = new HashSet<>();
 
     public Utente() {
